@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="favi_cos.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.css">
+ 
+</head>
+
+<style>
+.wrapper{
+  width: 100%;
+  margin-top: 20em;
+  text-align: center;
+}
+
+a.button{
+  background-color:white;
+  padding: 1em 3em;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+</style>
+
+<body>
+
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="homepage.html">COShop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="homepage.html">Acasa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="produse2.html">Produse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="oferte.html">Oferte</a>
+      </li>    
+      <li class="nav-item">
+          <a class="nav-link" href="cosulmeu.html">Cosul meu</a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" href="recenzie.html">Recenzii</a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" href="logare.html">Administrator</a>
+        </li>    
+        <li> <input class="form-control" id="myInput" type="text" placeholder="Search.."></li>
+    </ul>
+  </div>  
+</nav>
+
+  <!--progressbar-->
+
+  <div id="p1" class="container" style="margin-top:100px">
+    <h2 id="title">Abia ati inceput!</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width:2%">0%</div>
+    </div>
+  </div>
+
+
+  <div id="p2" class="container" style="margin-top:100px; display:none">
+    <h2>Va descurcati de minune!</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width:20%">20%</div>
+    </div>
+  </div>
+
+  <div id="p3" class="container" style="margin-top:100px; display:none">
+    <h2>Tineti-o tot asa!</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width:40%">40%</div>
+    </div>
+  </div>
+
+  <div id="p4" class="container" style="margin-top:100px; display:none">
+    <h2>Va apropiati de final!</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width:60%">60%</div>
+    </div>
+  </div>
+
+  <div id="p5" class="container" style="margin-top:100px; display:none">
+    <h2>Inca putin!</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width:80%">80%</div>
+    </div>
+  </div>
+  
+  <div id="p6" class="container" style="margin-top:100px; display:none">
+    <h2>Ati terminat!</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width:100%">100%</div>
+    </div>
+  </div>
+
+  <!--questions-->
+
+  <div id="1" class="container" style="margin-top:50px">
+    <div class="row">
+    <div class="col-sm-4">
+    <h2>Intrebarea 1</h2>
+    <p>Cum apreciati site-ul nostru?</p>
+    <button id="Q11" type="button" class="btn btn-primary">Slab</button>
+    <button id="Q12" type="button" class="btn btn-primary">Bun</button>
+    <button id="Q13" type="button" class="btn btn-primary">Excelent</button>
+    <!--<br><br>
+    <button id="next1" type="button" class="btn btn-success">Next</button>-->
+    </div>  
+    </div>
+  </div>
+
+  <div id="2" class="container" style="margin-top:50px; display:none">
+    <div class="row">
+    <div class="col-sm-4">
+    <h2>Intrebarea 2</h2>
+    <p>Cum apreciati calitatea produselor noastre?</p>
+    <button id="Q21" type="button" class="btn btn-primary">Slaba</button>
+    <button id="Q22" type="button" class="btn btn-primary">Buna</button>
+    <button id="Q23" type="button" class="btn btn-primary">Excelenta</button>
+    <!--<button id="next2">Next</button>-->
+    </div>  
+    </div>
+  </div>
+
+  <div id="3" class="container" style="margin-top:50px; display:none">
+    <div class="row">
+    <div class="col-sm-4">
+    <h2>Intrebarea 3</h2>
+    <p>Cum apreciati diversitatea produselor noastre?</p>
+    <button id="Q31" type="button" class="btn btn-primary">Slaba</button>
+    <button id="Q32" type="button" class="btn btn-primary">Buna</button>
+    <button id="Q33" type="button" class="btn btn-primary">Excelenta</button>
+    </div>  
+    </div>
+  </div>
+
+  <div id="4" class="container" style="margin-top:50px; display:none">
+    <div class="row">
+    <div class="col-sm-4">
+    <h2>Intrebarea 4</h2>
+    <p>Cum apreciati structura site-ului?</p>
+    <button id="Q41" type="button" class="btn btn-primary">Slab</button>
+    <button id="Q42" type="button" class="btn btn-primary">Bun</button>
+    <button id="Q43" type="button" class="btn btn-primary">Excelent</button>
+    
+    </div>  
+    </div>
+  </div>
+
+  <div id="5" class="container" style="margin-top:50px; display:none">
+    <div class="row">
+    <div class="col-sm-8">
+    <h2>Intrebarea 5</h2>
+    <p>Cat de probabil este sa ne recomandati?</p>
+    <button id="Q51" type="button" class="btn btn-primary">Putin probabil</button>
+    <button id="Q52" type="button" class="btn btn-primary">Probabil</button>
+    <button id="Q53" type="button" class="btn btn-primary">Destul de probabil</button>
+    </div>  
+    </div>
+  </div>
+
+  <div id="6" class="container" style="margin-top:50px; display:none">
+    <div class="row">
+    <div class="col-sm-8">
+    <h2>Va multumim pentru raspunsuri</h2>
+    </div>  
+    </div>
+  </div>
+
+  <!--animation-->
+
+  <div id="a3" class="container" style="margin-top:200px; display:none"> 
+    <div class="row">
+      <div class="col-sm-4"> </div>
+      <div class="col-sm-4">
+    <!--<a href="#" class="button animated infinite heartBeat">Animation</a>-->
+    <a href="#" class="button animated heartBeat"><img src="https://bit.ly/2QH5Ckx"  width="200" height="200"></a>
+    <br><br><br><br>
+    <!--<button id="next1" type="button" class="btn btn-success">Next</button>-->
+    </div>
+    <div class="col-sm-4" style="margin-top:300px;">
+      <button style="display:none" id="next31" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+      <button style="display:none" id="next32" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+      <button style="display:none" id="next33" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+      <button style="display:none" id="next34" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+      <button style="display:none" id="next35" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    </div>
+    </div>
+</div>
+
+<div id="a1" class="container" style="margin-top:200px; display:none"> 
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+  <!--<a href="#" class="button animated infinite heartBeat">Animation</a>-->
+  <a href="#" class="button animated swing"><img src="https://bit.ly/2T8c0Tf"  width="200" height="200"></a>
+  <br><br><br><br>
+  <!--<button id="next1" type="button" class="btn btn-success">Next</button>-->
+  </div>
+  <div class="col-sm-4" style="margin-top:300px;">
+    <button style="display:none" id="next11" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next12" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next13" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next14" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next15" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    
+  </div>
+  </div>
+</div>
+
+<div id="a2" class="container" style="margin-top:200px; display:none"> 
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+  <!--<a href="#" class="button animated infinite heartBeat">Animation</a>-->
+  <a href="#" class="button animated jackInTheBox"><img src="https://bit.ly/37NgW3W"  width="236" height="236"></a>
+  <br><br><br><br>
+  <!--<button id="next1" type="button" class="btn btn-success">Next</button>-->
+  </div>
+  <div class="col-sm-4" style="margin-top:300px;">
+    <button style="display:none" id="next21" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next22" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next23" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next24" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+    <button style="display:none" id="next25" type="button" class="btn btn-success">Urmatoarea intrebare</button>
+  </div>
+  </div>
+</div>
+
+
+<script>
+
+
+  var person = prompt("Cum te numesti?", "");
+  if (person != null) {
+    document.getElementById("title").innerHTML =
+    "Salut, " + person + "!";
+    setTimeout(HELLO,2000);
+    function HELLO(){document.getElementById("title").innerHTML =
+    "Abia ati inceput!";}
+    
+  }
+
+
+$(document).ready(function(){
+  $("#Q11").click(function(){
+    $("#1").hide();
+    $("#p1").hide();
+    $("#a1").show();
+    $("#next11").show();
+  });
+
+  $("#Q13").click(function(){
+    $("#1").hide();
+    $("#p1").hide();
+    $("#a3").show();
+    $("#next31").show();
+  });
+
+  $("#Q12").click(function(){
+    $("#1").hide();
+    $("#p1").hide();
+    $("#a2").show();
+    $("#next21").show();
+  });
+
+  $("#next11").click(function(){
+    $("#a1").hide();
+    $("#next11").hide();
+    $("#2").show();
+    $("#p2").show();
+  });
+
+  $("#next21").click(function(){
+    $("#a2").hide();
+    $("#next21").hide();
+    $("#2").show();
+    $("#p2").show();
+  });
+
+  $("#next31").click(function(){
+    $("#a3").hide();
+    $("#next31").hide();
+    $("#2").show();
+    $("#p2").show();
+  });
+
+  $("#Q21").click(function(){
+    $("#2").hide();
+    $("#p2").hide();
+    $("#a1").show();
+    $("#next12").show();
+  });
+
+  $("#Q22").click(function(){
+    $("#2").hide();
+    $("#p2").hide();
+    $("#a2").show();
+    $("#next22").show();
+  });
+
+  $("#Q23").click(function(){
+    $("#2").hide();
+    $("#p2").hide();
+    $("#a3").show();
+    $("#next32").show();
+  });
+  
+  $("#next12").click(function(){
+    $("#a1").hide();
+    $("#next12").hide();
+    $("#3").show();
+    $("#p3").show();
+  });
+
+  $("#next22").click(function(){
+    $("#a2").hide();
+    $("#next22").hide();
+    $("#3").show();
+    $("#p3").show();
+  });
+
+  $("#next32").click(function(){
+    $("#a3").hide();
+    $("#next32").hide();
+    $("#3").show();
+    $("#p3").show();
+  });
+
+  $("#Q31").click(function(){
+    $("#3").hide();
+    $("#p3").hide();
+    $("#a1").show();
+    $("#next13").show();
+  });
+
+  $("#Q32").click(function(){
+    $("#3").hide();
+    $("#p3").hide();
+    $("#a2").show();
+    $("#next23").show();
+  });
+
+  $("#Q33").click(function(){
+    $("#3").hide();
+    $("#p3").hide();
+    $("#a3").show();
+    $("#next33").show();
+  });
+
+  $("#next13").click(function(){
+    $("#a1").hide();
+    $("#next13").hide();
+    $("#4").show();
+    $("#p4").show();
+  });
+
+  $("#next23").click(function(){
+    $("#a2").hide();
+    $("#next23").hide();
+    $("#4").show();
+    $("#p4").show();
+  });
+
+  $("#next33").click(function(){
+    $("#a3").hide();
+    $("#next33").hide();
+    $("#4").show();
+    $("#p4").show();
+  });
+
+  $("#Q41").click(function(){
+    $("#4").hide();
+    $("#p4").hide();
+    $("#a1").show();
+    $("#next14").show();
+  });
+
+  $("#Q42").click(function(){
+    $("#4").hide();
+    $("#p4").hide();
+    $("#a2").show();
+    $("#next24").show();
+  });
+
+  $("#Q43").click(function(){
+    $("#4").hide();
+    $("#p4").hide();
+    $("#a3").show();
+    $("#next34").show();
+  });
+
+  $("#next14").click(function(){
+    $("#a1").hide();
+    $("#next14").hide();
+    $("#5").show();
+    $("#p5").show();
+  });
+
+  $("#next24").click(function(){
+    $("#a2").hide();
+    $("#next24").hide();
+    $("#5").show();
+    $("#p5").show();
+  });
+
+  $("#next34").click(function(){
+    $("#a3").hide();
+    $("#next34").hide();
+    $("#5").show();
+    $("#p5").show();
+  });
+
+  $("#Q51").click(function(){
+    $("#5").hide();
+    $("#p5").hide();
+    $("#a1").show();
+    $("#next15").show();
+  });
+
+  $("#Q52").click(function(){
+    $("#5").hide();
+    $("#p5").hide();
+    $("#a2").show();
+    $("#next25").show();
+  });
+
+  $("#Q53").click(function(){
+    $("#5").hide();
+    $("#p5").hide();
+    $("#a3").show();
+    $("#next35").show();
+  });
+
+  $("#next15").click(function(){
+    $("#a1").hide();
+    $("#next15").hide();
+    $("#6").show();
+    $("#p6").show();
+  });
+
+  $("#next25").click(function(){
+    $("#a2").hide();
+    $("#next25").hide();
+    $("#6").show();
+    $("#p6").show();
+  });
+  $("#next35").click(function(){
+    $("#a3").hide();
+    $("#next35").hide();
+    $("#6").show();
+    $("#p6").show();
+  });
+});
+
+</script>
+
+</body>
+
+</html>

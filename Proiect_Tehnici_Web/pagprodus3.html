@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="favi_cos.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+  <style>
+ 
+  </style>
+</head>
+  <body>
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="homepage.html">COShop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Acasa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="produse2.html">Produse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="oferte.html">Oferte</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="cosulmeu.html">Cosul meu</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="recenzie.html">Recenzii</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="logare.html">Administrator</a>
+          </li>    
+          <li> <input class="form-control" id="myInput" type="text" placeholder="Search..."></li>
+      </ul>
+    </div>  
+  </nav>
+
+<!---->
+  <h1 style="padding:70px;">Smart Watch</h1>
+
+  <table>
+      <tr>
+          <td>
+            <img src="https://bit.ly/30cEBdH"  width="300" height="300">  
+          </td>
+          <td>
+            <img src="https://bit.ly/2MAHywx" width="300" height="300"> 
+          </td>
+          <td>
+            <img src="https://bit.ly/3gXA0St"  width="300" height="300">
+          </td>
+      </tr>
+      <tr>
+        <th colspan="3" style="text-align: center;"><p id="ravas"></p></th>
+      </tr>
+      <tr>
+        <th colspan="3" style="text-align: left;"><p>Descriere:</p></th>
+      </tr>
+      <tr>
+        <th colspan="3" style="text-align: left;"><p>Smartwatch sau ceas inteligent este un ceas de mână cu funcții avansate și caracteristicile unui telefon inteligent.
+
+            În funcție de model și de producător, un smartwatch este capabil să afișeze pe un ecran tactil diferite informații sub formă de text și/sau grafice, să redea muzică, să afișeze e-mail-uri, să preia și să inițieze apeluri, să fotografieze, să arate ora, colectarea de informații de la senzori interni și externi etc.
+            
+            Ceasurile inteligente sunt în prezent printre cele mai populare produse de tip portabil de pe piață. Conform firmei de cercetare IDC, peste 30 la sută din produsele portabile sunt ceasuri inteligente.</p></th>
+      </tr>
+  </table>
+
+  <script>
+    var mesaj = ["Cel mai bun pret din tara!", "Grabeste-te! Alte 5 persoane se uita la acest produs!", "Stoc limitat!", "La un produs cumparat ai 25% la al doilea!"];
+    
+    //function myFunction() {
+      document.getElementById("ravas").innerHTML = mesaj[Math.floor(Math.random() * 4)];
+   // }
+    </script>
+  </body>
+
+</html>

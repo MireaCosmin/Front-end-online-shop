@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>COShop</title>
+    
+    <link rel="shortcut icon" type="image/png" href="favi_cos.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b467a52e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+
+  <style>
+
+  /*galerie*/
+
+  #galerie {
+margin-left :auto;
+margin-right:auto;
+margin-top:0px;
+width:1000px; }
+figcaption, h2, section {text-align: center;}
+.ig {margin:20px; display: inline-block;}
+
+
+  /*cartonas produs*/
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+  </style>
+
+</head>
+
+
+<body>
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="homepage.html">COShop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Acasa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produse2.html">Produse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="oferte.html">Oferte</a>
+          </li>    
+          <li class="cart">
+              <a class="nav-link" href="cosulmeu.html">Cosul meu<span>0</span></a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="recenzie.html">Recenzii</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="logare.html">Administrator</a>
+            </li>    
+            <li> <input class="form-control" id="myInput" type="text" placeholder="Search.."></li>
+        </ul>
+      </div>  
+    </nav>
+    
+  <br>
+
+<!--buton sortare-->
+
+<div class="container" style="margin-top:50px">                                         
+    <div class="dropdown">
+      <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+        Sortare
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" onclick="myFunction1()">Pret crescator</a>
+        <a class="dropdown-item" href="#" onclick="myFunction2()"> Pret descrescator</a>
+        <a class="dropdown-item" href="#" onclick="myFunction3()">Alfabetic</a>
+      </div>
+    </div>
+  </div>
+
+<!--lista produse-->
+
+<section id="galerie">
+  <h2> Produsele noastre </h2>
+<figure class="ig">
+  <div class="card">
+    <a href="pagprodus3.html"><img src="https://bit.ly/3gXA0St"  width="220" height="220"></a>
+    <p>Smartwatch Barbat</p>
+    <p class="price">350</p>
+    <button class="adauga-produs p1"><i class="fas fa-shopping-basket"></i> Adauga in cos</button>
+  </div>
+</figure>
+
+<figure class="ig">
+  <div class="card">
+    <a href="pagprodus.html"><img src="https://bit.ly/3dEvpCT"  width="220" height="220"></a>
+    <p>Smartwatch Dama</p>
+    <p class="price">300</p>
+    <button class="adauga-produs p2"><i class="fas fa-shopping-basket"></i> Adauga in cos</button>
+  </div>
+</figure>
+
+<figure class="ig">
+  <div class="card">
+    <a href="pagprodus2.html"><img src="https://bit.ly/30jBh0B"  width="220" height="220"></a>
+    <p>Smartwatch Kids</p>
+    <p class="price">150</p>
+    <button class="adauga-produs p3"><i class="fas fa-shopping-basket"></i> Adauga in cos</button>
+  </div>
+</figure>
+      
+<figure class="ig">
+  <div class="card">
+    <a href="pagprodus.html"><img src="https://bit.ly/39pUQq3"></a>
+    <p>Smart Watch</p>
+    <p class="price">200</p>
+    <button class="adauga-produs p4"><i class="fas fa-shopping-basket"></i> Adauga in cos</button>
+  </div>
+</figure>
+      
+<figure class="ig">
+  <div class="card">
+    <a href="pagprodus.html"><img src="https://bit.ly/39pUQq3"></a>
+    <p>Ceas Kids Marvel</p>
+    <p class="price">200</p>
+    <button class="adauga-produs p5"><i class="fas fa-shopping-basket"></i> Adauga in cos</button>
+  </div>
+</figure>
+
+<figure class="ig">
+  <div class="card">
+    <a href="pagprodus.html"><img src="https://bit.ly/39pUQq3"></a>
+    <p>Ceas</p>
+    <p class="price">250</p>
+    <button class="adauga-produs p6"><i class="fas fa-shopping-basket"></i> Adauga in cos</button>
+  </div>
+</figure>
+</section>
+
+<div id="demo"></div>
+
+<script>
+
+var date, text, Len, i;
+date = [{nume:"Smart Watch", pret:200}, {nume:"Ceas Barbatesc", pret:350}, 
+{nume:"Ceas Dama", pret:300}, {nume:"Ceas Kids", pret:150}, {nume:"Ceas Kids Marvel", pret:200},
+{nume:"Ceas", pret:250}];
+Len = date.length;
+
+function myFunction1() {
+  date.sort(function(a, b){return a.pret - b.pret});
+
+text = "<table><tr>";
+for (i = 0; i < Len; i++) {
+if( i==2 || i==4 ) {text += "</tr><tr>";};
+  text += "<td>" + date[i].nume + "<br>" + date[i].pret + "</td>";
+}
+text += "</tr></table>";
+
+document.getElementById("demo").innerHTML = text;}
+
+
+function myFunction2() {
+  date.sort(function(a, b){return b.pret - a.pret});
+
+text = "<table><tr>";
+for (i = 0; i < Len; i++) {
+if( i==2 || i==4 ) {text += "</tr><tr>";};
+  text += "<td>" + date[i].nume + "<br>" + date[i].pret + "</td>";
+}
+text += "</tr></table>";
+
+document.getElementById("demo").innerHTML = text;}
+
+function myFunction3() {
+  date.sort(function(a, b){
+    var x = a.nume.toLowerCase();
+    var y = b.nume.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+
+text = "<table><tr>";
+for (i = 0; i < Len; i++) {
+if( i==2 || i==4 ) {text += "</tr><tr>";};
+  text += "<td>" + date[i].nume + "<br>" + date[i].pret + "</td>";
+}
+text += "</tr></table>";
+
+document.getElementById("demo").innerHTML = text;}
+
+</script>
+
+<script>
+ let carts = document.querySelectorAll('.adauga-produs');
+ let products = [
+   {
+     nume:'Smartwch Barbat',
+     tag: 'ceas barbatesc',
+     pret: 250,
+     inCart: 0
+   },
+   {
+     nume:'Smartwch dama',
+     tag: 'ceas dama',
+     pret: 250,
+     inCart: 0
+   },
+   {
+     nume:'Smartwch Kids',
+     tag: 'ceas copii',
+     pret: 250,
+     inCart: 0
+   },
+   {
+     nume:'Ceas elegant',
+     tag: 'ceas elegant',
+     pret: 250,
+     inCart: 0
+   },
+   {
+     nume:'Ceas sport',
+     tag: 'ceas sport',
+     pret: 250,
+     inCart: 0
+   },
+   {
+     nume:'Ceas casual',
+     tag: 'ceas casual',
+     pret: 250,
+     inCart: 0
+   },
+ ];
+
+ for (let i=0;i<carts.length;i++)
+ {
+   carts[i].addEventListener('click',() =>{
+    cartNumbers(products[i]);
+    totalCost(products[i])
+   })
+ }
+
+ function onLoadCartNumbers()
+{
+  let productNumbers = localStorage.getItem('cartNumbers');
+
+  if(productNumbers){
+    document.querySelector('.cart span').textContent = productNumbers;
+  }
+}
+
+ function cartNumbers(product){
+   
+   let productNumbers = localStorage.getItem('cartNumbers');
+   
+   productNumbers = parseInt(productNumbers)
+
+   if(productNumbers){
+     localStorage.setItem('cartNumbers',productNumbers + 1);
+     document.querySelector('.cart span').textContent = productNumbers + 1;
+   }
+   else{
+    localStorage.setItem('cartNumbers',1);
+    document.querySelector('.cart span').textContent = 1;
+   }
+   setItems(product);
+ }
+
+function setItems(product){
+  let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+
+  if(cartItems != null){
+
+    if(cartItems[product.tag] == undefined){
+        cartItems = {
+          ...cartItems,
+          [product.tag]: product
+        }
+    }
+      cartItems[product.tag].inCart += 1; 
+  }
+  else{
+     product.inCart = 1;
+     cartItems = {
+     [product.tag]: product
+   }
+}
+ 
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems) );
+}
+
+function totalCost(product){
+  //console.log("The products price is", product.pret);
+  let cartCost = localStorage.getItem('totalCost');
+  
+
+  console.log("My cart cost is", cartCost);
+  console.log(typeof cartCost);
+
+  if(cartCost != null){
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost + product.pret);
+  }
+  else{
+    localStorage.setItem("totalCost", product.pret);
+  }
+
+
+  
+  
+}
+
+ onLoadCartNumbers();
+
+</script>
+
+</body>
+</html>
